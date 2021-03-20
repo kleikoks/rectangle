@@ -19,50 +19,86 @@ id,name,content_type,codename
 18,Can change content type,5,change_contenttype
 19,Can delete content type,5,delete_contenttype
 20,Can view content type,5,view_contenttype
-37,Can add waste util,10,add_wasteutil
-38,Can change waste util,10,change_wasteutil
-39,Can delete waste util,10,delete_wasteutil
-40,Can view waste util,10,view_wasteutil
-41,Can add waste util category,11,add_wasteutilcategory
-42,Can change waste util category,11,change_wasteutilcategory
-43,Can delete waste util category,11,delete_wasteutilcategory
-44,Can view waste util category,11,view_wasteutilcategory
-45,Can add waste util review,12,add_wasteutilreview
-46,Can change waste util review,12,change_wasteutilreview
-47,Can delete waste util review,12,delete_wasteutilreview
-48,Can view waste util review,12,view_wasteutilreview
-29,Can add user,8,add_person
-30,Can change user,8,change_person
-31,Can delete user,8,delete_person
-32,Can view user,8,view_person
-33,Can add book,9,add_book
-34,Can change book,9,change_book
-35,Can delete book,9,delete_book
-36,Can view book,9,view_book
-25,Can add book,7,add_book
-26,Can change book,7,change_book
-27,Can delete book,7,delete_book
-28,Can view book,7,view_book
+65,Can add mailto,17,add_mailto
+101,Can add waste util,17,add_wasteutil
+66,Can change mailto,17,change_mailto
+102,Can change waste util,17,change_wasteutil
+67,Can delete mailto,17,delete_mailto
+103,Can delete waste util,17,delete_wasteutil
+68,Can view mailto,17,view_mailto
+104,Can view waste util,17,view_wasteutil
+69,Can add map,18,add_map
+105,Can add waste util category,18,add_wasteutilcategory
+70,Can change map,18,change_map
+106,Can change waste util category,18,change_wasteutilcategory
+71,Can delete map,18,delete_map
+107,Can delete waste util category,18,delete_wasteutilcategory
+72,Can view map,18,view_map
+108,Can view waste util category,18,view_wasteutilcategory
+73,Can add tel,19,add_tel
+109,Can add waste util review,19,add_wasteutilreview
+74,Can change tel,19,change_tel
+110,Can change waste util review,19,change_wasteutilreview
+75,Can delete tel,19,delete_tel
+111,Can delete waste util review,19,delete_wasteutilreview
+76,Can view tel,19,view_tel
+112,Can view waste util review,19,view_wasteutilreview
 57,Can add image,15,add_image
+97,Can add user,15,add_person
 58,Can change image,15,change_image
+98,Can change user,15,change_person
 59,Can delete image,15,delete_image
+99,Can delete user,15,delete_person
 60,Can view image,15,view_image
+100,Can view user,15,view_person
 61,Can add link,16,add_link
 62,Can change link,16,change_link
 63,Can delete link,16,delete_link
 64,Can view link,16,view_link
-65,Can add mailto,17,add_mailto
-66,Can change mailto,17,change_mailto
-67,Can delete mailto,17,delete_mailto
-68,Can view mailto,17,view_mailto
-69,Can add map,18,add_map
-70,Can change map,18,change_map
-71,Can delete map,18,delete_map
-72,Can view map,18,view_map
-73,Can add tel,19,add_tel
-74,Can change tel,19,change_tel
-75,Can delete tel,19,delete_tel
-76,Can view tel,19,view_tel
+25,Can add book,7,add_book
+26,Can change book,7,change_book
+27,Can delete book,7,delete_book
+28,Can view book,7,view_book
+77,Can add image,8,add_image
+29,Can add user,8,add_person
+78,Can change image,8,change_image
+30,Can change user,8,change_person
+79,Can delete image,8,delete_image
+31,Can delete user,8,delete_person
+80,Can view image,8,view_image
+32,Can view user,8,view_person
+33,Can add book,9,add_book
+81,Can add link,9,add_link
+34,Can change book,9,change_book
+82,Can change link,9,change_link
+35,Can delete book,9,delete_book
+83,Can delete link,9,delete_link
+36,Can view book,9,view_book
+84,Can view link,9,view_link
+85,Can add mailto,10,add_mailto
+37,Can add waste util,10,add_wasteutil
+86,Can change mailto,10,change_mailto
+38,Can change waste util,10,change_wasteutil
+87,Can delete mailto,10,delete_mailto
+39,Can delete waste util,10,delete_wasteutil
+88,Can view mailto,10,view_mailto
+40,Can view waste util,10,view_wasteutil
+89,Can add map,11,add_map
+41,Can add waste util category,11,add_wasteutilcategory
+90,Can change map,11,change_map
+42,Can change waste util category,11,change_wasteutilcategory
+91,Can delete map,11,delete_map
+43,Can delete waste util category,11,delete_wasteutilcategory
+92,Can view map,11,view_map
+44,Can view waste util category,11,view_wasteutilcategory
+93,Can add tel,12,add_tel
+45,Can add waste util review,12,add_wasteutilreview
+94,Can change tel,12,change_tel
+46,Can change waste util review,12,change_wasteutilreview
+95,Can delete tel,12,delete_tel
+47,Can delete waste util review,12,delete_wasteutilreview
+96,Can view tel,12,view_tel
+48,Can view waste util review,12,view_wasteutilreview
 49,Can add text,13,add_text
 50,Can change text,13,change_text
 51,Can delete text,13,delete_text

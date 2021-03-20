@@ -11,6 +11,28 @@ class Command(BaseCommand):
     def add_arguments(self, parser):
         parser.add_argument('--path', default='\export\\')
 
+    # def handle(self, *args, **kwargs):
+    #     paths = get_paths(kwargs['path'])
+    #     for path in paths:
+    #         with open(path, 'r', newline='', encoding='utf-8') as f:
+    #             model_name = ntpath.basename(f.name).split('.')[0]
+    #             ext = path[path.rfind('.') + 1:]
+    #             models = django.apps.apps.get_models()
+    #             dataset = tablib.Dataset()
+    #             for model in models:
+    #                 if model_name == model.__name__:
+    #                     fields = []
+    #                     for field_name in model._meta.get_fields():
+    #                         fields.append(field_name.name)
+    #                     f.seek(0)
+    #                     field = f.readline().replace('\r\n', '').split(',')
+    #                     if fields.sort() == field.sort():
+    #                         print(fields, field)
+    #                         dataset.load(f.read(), format=ext)
+    #                         resource = resources.modelresource_factory(model=model)()
+    #                         resource.import_data(dataset, dry_run=False)
+    #                         print(f'{model.__name__:<20} Success!')
+
     def handle(self, *args, **kwargs):
         paths = get_paths(kwargs['path'])
         for path in paths:
@@ -21,16 +43,11 @@ class Command(BaseCommand):
                 dataset = tablib.Dataset()
                 for model in models:
                     if model_name == model.__name__:
-                        fields = []
-                        for field_name in model._meta.get_fields():
-                            fields.append(field_name.name)
-                        f.seek(0)
-                        field = f.readline().replace('\r\n', '').split(',')
-                        if fields.sort() == field.sort():
-                            dataset.load(f.read(), format=ext)
-                            resource = resources.modelresource_factory(model=model)()
-                            resource.import_data(dataset)
-                            print(f'{model.__name__:<20} Success!')
+                        dataset.load(f.read(), format=ext)
+                        resource = resources.modelresource_factory(model=model)()
+                        resource.import_data(dataset, dry_run=False)
+                        print(f'{model.__name__:<20} Success!')
+
 
 def get_paths(path):
     path = slash_check(path)
