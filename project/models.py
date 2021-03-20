@@ -24,7 +24,7 @@ class TextResource(models.Model):
         return f'{self.text}' or f'{self.mailto}' or f'{self.tel}' or f'{self.image}' or f'{self.map}' or f'{self.link}'
 
 class Text(models.Model):
-    text = models.CharField(verbose_name="Text", max_length=10000, blank=True, null=True)
+    text = models.TextField(verbose_name="Text", blank=True, null=True)
 
     def __str__(self):
         data = f'{self.text}'
