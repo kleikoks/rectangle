@@ -1,0 +1,5 @@
+pip3 install django
+pip3 install djangorestframework
+pip3 install pillow
+pip3 install django-modeltranslation
+pip3 install django-import-export

@@ -4,8 +4,6 @@
 {% get_available_languages as LANGUAGES %}
 {% get_language_info_list for LANGUAGES as languages %}
 
-LANGUAGE_CODE {{ LANGUAGE_CODE }} <br>
-LANGUAGES {{ LANGUAGES }}<br>
 {% for language in languages %}
     <a href="{% url 'set_lang' language.code %}">{{language.code}}</a>
 {% endfor %}
