@@ -1,0 +1,10 @@
+postgres psql -c "create user kleikoks with password 'kleikoks'; alter role kleikoks set client_encoding to 'utf8'; alter role kleikoks set default_transaction_isolation to 'read committed'; alter role kleikoks set timezone to 'UTC';"
+# створює юзера в БД. Вводити 1 раз перед початком розробки. 
+
+sudo -u postgres psql -c "drop database dopomoga; "
+# видаляє БД
+
+sudo -u postgres psql -c "create database dopomoga owner jurgeon; "
+# створює БД 
+
+pg_ctl -D "C:\Program Files\PostgreSQL\13\data" start 

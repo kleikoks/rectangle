@@ -1,0 +1,25 @@
+{% load static i18n render %}
+
+{% get_current_language as LANGUAGE_CODE %}
+{% get_available_languages as LANGUAGES %}
+{% get_language_info_list for LANGUAGES as languages %}
+
+LANGUAGE_CODE {{ LANGUAGE_CODE }} <br>
+LANGUAGES {{ LANGUAGES }}<br>
+{% for language in languages %}
+    <a href="{% url 'set_lang' language.code %}">{{language.code}}</a>
+{% endfor %}
+<br>
+<br>
+<br>
+fff{{book.text}}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+{% comment %} {% render 1 as t %}
+{{t.text.text}} {% endcomment %}
+{{text.text_resource.id}}
+wtf git
