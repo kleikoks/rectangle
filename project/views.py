@@ -23,10 +23,6 @@ def book_list(request):
     return Response(serializer.data)
 
 def index(request):
-    book = TextResource.objects.first()
-    exec("book.text.text_ru = 'RU'")
-    # book.text.text_ru = 'RU'
-    text = Text.objects.first()
     return render(request, 'project/index.html', locals())
 
 def set_lang(request, lang):
