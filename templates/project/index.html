@@ -9,3 +9,5 @@
 {% endfor %}
 <br>
 <br>
+{% render 1 as text_res %}
+<p data-id="{{text_res.id}}">{{text_res.text.text}}</p>
