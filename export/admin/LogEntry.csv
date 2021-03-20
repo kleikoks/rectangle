@@ -1,4 +1,12 @@
 id,action_time,user,content_type,object_id,object_repr,action_flag,change_message
+22,2021-03-20 13:50:17,1,13,1,Українська,2,"[{""changed"": {""fields"": [""Text [en]"", ""Text [ru]"", ""Text [uk]""]}}]"
+21,2021-03-20 13:50:00,1,13,1,textuk,2,[]
+20,2021-03-20 13:49:33,1,13,1,textuk,2,"[{""changed"": {""fields"": [""Text"", ""Text [uk]""]}}]"
+19,2021-03-19 17:45:38,1,13,1,textukffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff fqwwwwww fwqqqqqqqq fqwwwwwwwwwww fwqqqqqqqqqq wfqqqqqqqqqqq fqwwwwwwwwwwww textukfffffffffffffffffffffffffffffffffffffffffffffffff,2,"[{""changed"": {""fields"": [""Text [uk]""]}}]"
+18,2021-03-19 17:45:10,1,13,1,textukffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff fqwwwwww fwqqqqqqqq fqwwwwwwwwwww fwqqqqqqqqqq wfqqqqqqqqqqq fqwwwwwwwwwwww,2,"[{""changed"": {""fields"": [""Text [uk]""]}}]"
+17,2021-03-19 17:44:44,1,13,1,textukffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff,2,"[{""changed"": {""fields"": [""Text [uk]""]}}]"
+16,2021-03-19 17:44:37,1,13,1,textukfffffffffffffffffffffffffffffffffffffff,2,"[{""changed"": {""fields"": [""Text [uk]""]}}]"
+15,2021-03-19 17:44:25,1,13,1,textuk,2,"[{""changed"": {""fields"": [""Text""]}}]"
 14,2021-03-18 23:11:09,1,13,1,textuk,2,"[{""changed"": {""fields"": [""Text""]}}]"
 13,2021-03-18 23:00:39,1,14,1,TextResource object (1),1,"[{""added"": {}}]"
 12,2021-03-18 23:00:25,1,13,1,textuk,1,"[{""added"": {}}]"
