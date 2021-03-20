@@ -1,11 +1,16 @@
 {% load static i18n render %}
+<link rel="stylesheet" href="/static/source/pages/index/index.css">
 
 {% get_current_language as LANGUAGE_CODE %}
 {% get_available_languages as LANGUAGES %}
 {% get_language_info_list for LANGUAGES as languages %}
 
 {% for language in languages %}
-    <a href="{% url 'set_lang' language.code %}">{{language.code}}</a>
+<a href="{% url 'set_lang' language.code %}">{{language.code}}</a>
 {% endfor %}
 <br>
 <br>
+
+
+<script src="/static/source/lib/jquery/index.js"></script>
+<script src="/static/source/pages/index/index.js"></script>
