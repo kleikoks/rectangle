@@ -7,5 +7,5 @@ serializer_routes = [
 ]
 
 urlpatterns = [
-    path('set_lang/<lang>', set_lang, name='set_lang')
-] + serializer_routes
+    
+] +  serializer_routes

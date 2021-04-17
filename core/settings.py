@@ -18,11 +18,13 @@ INSTALLED_APPS = [
     'import_export',
     'rest_framework',
     'modeltranslation',
+    'adminsortable2',
     #apps
-    'project',
     'dj_users',
+    'project',
     'imp_exp',
-    'dj_rest_framework'
+    'translation',
+    'dj_rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -115,3 +117,6 @@ STATIC_ROOT        = os.path.join(BASE_DIR, "static_root")
 MEDIA_ROOT         = os.path.join(BASE_DIR, "media")
 STATIC_URL         = '/static/'
 MEDIA_URL          = '/media/'
+
+
+CELERY_BROKER_URL = 'amqp://localhost'

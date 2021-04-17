@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Login</h1>
-    <form action="" method="POST">
-    {% csrf_token %}
+ {% render 157 as text157 %}
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Document
+  </title>
+ </head>
+ <body>
+  <h1 text-id="157">
+   {{text157.text|safe}}
+  </h1>
+  <form action="" method="POST">
+   {% csrf_token %}
     {{form}}
-    <input type="submit">
-    </form>
-</body>
+   <input type="submit"/>
+  </form>
+ </body>
 </html>

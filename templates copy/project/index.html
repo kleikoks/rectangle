@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/source/pages/index/index.css">
+
+</head>
+
+<body>
+    {% load static i18n render %}
+    {% get_current_language as LANGUAGE_CODE %}
+    {% get_available_languages as LANGUAGES %}
+    {% get_language_info_list for LANGUAGES as languages %}
+
+    {% for language in languages %}
+    <a href="{% url 'set_lang' language.code %}">{{language.code}}</a>
+    {% endfor %}
+    <br>
+    <br>
+    {% render 1 as text_res %}
+    <p data-id="{{text_res.id}}">{{text_res.text.text}}</p>
+    {{languages_list}}
+    {{fields}}
+    <a href='fqwfqw.fwqf.fqw'>smmmmttxxxxxttt</a>
+    <a href=''></a>
+
+    <script src="/static/source/lib/jquery/index.js"></script>
+    <script src="/static/source/pages/index/index.js"></script>
+</body>
+
+</html><!DOCTYPE html>
+<html lang="en">
+ {% render 103 as text103 %}
+ {% render 102 as text102 %}
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Document
+  </title>
+  <link href="/static/source/pages/index/index.css" rel="stylesheet"/>
+ </head>
+ <body>
+  {% load static i18n render %}
+    {% get_current_language as LANGUAGE_CODE %}
+    {% get_available_languages as LANGUAGES %}
+    {% get_language_info_list for LANGUAGES as languages %}
+
+    {% for language in languages %}
+  <a href="{% url 'set_lang' language.code %}" text-id="102">
+   {{text102.text|safe}}
+  </a>
+  {% endfor %}
+  <br/>
+  <br/>
+  {% render 1 as text_res %}
+  <p data-id="{{text_res.id}}" text-id="103">
+   {{text103.text|safe}}
+  </p>
+  {{languages_list}}
+    {{fields}}
+  <script src="/static/source/lib/jquery/index.js">
+  </script>
+  <script src="/static/source/pages/index/index.js">
+  </script>
+ </body>
+</html>

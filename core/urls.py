@@ -8,8 +8,10 @@ from project.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('project.urls')),
+    path('', include('translation.urls')),
     path('', include('dj_users.urls')),
     path('api/', include('dj_rest_framework.api.urls')),
+    path('api/', include('translation.api.urls')),
     path('api-auth/', include('rest_framework.urls')),
 ]
 urlpatterns += i18n_patterns(

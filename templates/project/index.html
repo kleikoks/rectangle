@@ -1,30 +1,41 @@
+{% load static i18n render %}
+{% now "SHORT_DATETIME_FORMAT" %}
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/static/source/pages/index/index.css">
-
-</head>
-
-<body>
-    {% load static i18n render %}
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Document
+  </title>
+  <link href="/static/source/pages/index/index.css" rel="stylesheet"/>
+ </head>
+ <body>
     {% get_current_language as LANGUAGE_CODE %}
     {% get_available_languages as LANGUAGES %}
     {% get_language_info_list for LANGUAGES as languages %}
 
     {% for language in languages %}
-    <a href="{% url 'set_lang' language.code %}">{{language.code}}</a>
-    {% endfor %}
-    <br>
-    <br>
-    {% render 1 as text_res %}
-    <p data-id="{{text_res.id}}">{{text_res.text.text}}</p>
-
-    <script src="/static/source/lib/jquery/index.js"></script>
-    <script src="/static/source/pages/index/index.js"></script>
-</body>
-
+  <a href="{% url 'set_lang' language.code %}" text-id="159">
+   {{text159.text|safe}}
+  </a>
+  {% endfor %}
+  <br/>
+  <br/>
+  {% render 1 as text_res %}
+  <p data-id="{{text_res.id}}" text-id="160">
+   {{text160.text|safe}}
+  </p>
+  {{languages_list}}
+    {{fields}}
+  <a href="fqwfqw.fwqf.fqw" text-id="161">
+   {{text161.text|safe}}
+  </a>
+  <a href="">
+  </a>
+  <script src="/static/source/lib/jquery/index.js">
+  </script>
+  <script src="/static/source/pages/index/index.js">
+  </script>
+ </body>
 </html>
